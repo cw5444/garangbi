@@ -85,7 +85,6 @@ export default function Home() {
       {/* ═══════════ 섹션 2: 메인 메시지 ═══════════ */}
       <section id="main-section" className="w-full min-h-screen flex items-center justify-center py-20 px-4">
         <div className="max-w-4xl w-full">
-          {/* 왼쪽: 텍스트 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="text-white order-2 md:order-1">
               <h2 className="text-4xl md:text-5xl font-light tracking-wider mb-6">
@@ -103,7 +102,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* 오른쪽: 사진 */}
             <div className="relative h-96 md:h-full order-1 md:order-2 rounded-lg overflow-hidden">
               <Image
                 src="/image/family-main.jpg"
@@ -116,8 +114,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══════════ 섹션 3: 축하 메시지 ═══════════ */}
+      {/* ═══════════ 섹션 3: 움직이는 가족 GIF ═══════════ */}
       <section className="w-full min-h-screen flex items-center justify-center py-20 px-4 bg-gray-900">
+        <div className="max-w-2xl w-full text-center">
+          <h2 className="text-4xl md:text-5xl font-light tracking-wider text-white mb-12">
+            함께한 순간들
+          </h2>
+
+          {/* GIF 카드 */}
+          <div className="bg-black rounded-2xl p-8 shadow-2xl">
+            <div className="relative w-full h-96">
+              <Image
+                src="/image/family-animated.gif"
+                alt="가족 GIF"
+                fill
+                className="object-cover rounded-lg"
+                unoptimized
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ 섹션 4: 축하 메시지 ═══════════ */}
+      <section className="w-full min-h-screen flex items-center justify-center py-20 px-4">
         <div className="max-w-2xl w-full text-center">
           <h2 className="text-4xl md:text-5xl font-light tracking-wider text-white mb-16">
             축하의 말씀
