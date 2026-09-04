@@ -158,6 +158,15 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ═══════════ 섹션 3: 움직이는 가족 GIF ═══════════ */}
+      <section className="w-full min-h-screen flex items-center justify-center py-20 px-4 bg-gray-900">
+        <div className="max-w-2xl w-full text-center">
+          <h2 className="text-4xl md:text-5xl font-light tracking-wider text-white mb-12">
+            그럼.. 이제 새로운 20년으로 출..발..? ^^
+          </h2>
+
+        </div>
+      </section>
 
       {/* 배경 음악 */}
       <audio ref={audioRef} loop>
