@@ -114,6 +114,28 @@ export default function Home() {
         </div>
       </section>
 
+
+
+      {/* ═══════════ 섹션 4: 축하 메시지 ═══════════ */}
+      <section className="w-full min-h-screen flex items-center justify-center py-20 px-4">
+        <div className="max-w-2xl w-full text-center">
+          <h2 className="text-4xl md:text-5xl font-light tracking-wider text-white mb-16">
+            축하의 말씀
+          </h2>
+
+          {/* 메시지 카드 */}
+          <div className="bg-white rounded-2xl p-12 shadow-2xl">
+            <Image
+              src="/image/message.jpg"
+              alt="축하 메시지"
+              width={500}
+              height={600}
+              className="w-full h-auto rounded-lg"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* ═══════════ 섹션 3: 움직이는 가족 GIF ═══════════ */}
       <section className="w-full min-h-screen flex items-center justify-center py-20 px-4 bg-gray-900">
         <div className="max-w-2xl w-full text-center">
@@ -136,25 +158,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══════════ 섹션 4: 축하 메시지 ═══════════ */}
-      <section className="w-full min-h-screen flex items-center justify-center py-20 px-4">
-        <div className="max-w-2xl w-full text-center">
-          <h2 className="text-4xl md:text-5xl font-light tracking-wider text-white mb-16">
-            축하의 말씀
-          </h2>
-
-          {/* 메시지 카드 */}
-          <div className="bg-white rounded-2xl p-12 shadow-2xl">
-            <Image
-              src="/image/message.jpg"
-              alt="축하 메시지"
-              width={500}
-              height={600}
-              className="w-full h-auto rounded-lg"
-            />
-          </div>
-        </div>
-      </section>
 
       {/* 배경 음악 */}
       <audio ref={audioRef} loop>
